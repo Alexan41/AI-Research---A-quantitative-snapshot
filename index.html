@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-CM">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Recherchez vos soins">
+        <meta name="keywords" content="Soins,Médicament,Pharmacie">
+        <meta name="author" content="Alexandre Lowe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            Ma pharmacie
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+        <link rel="stylesheet" href="Style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo">
+                    <a href="#logo">pharmacie<span>ICI</span></a>
+                </div>
+                <div class="links">
+                    <a href="A propos">À propos</a>
+                    <a href="pharmacie_login">Vous êtes une pharmacie ?</a>
+                    <a href="Me_joindre">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="hero" id="home">
+                <div class="text_container">
+                  <p class="pre-title">One stop for global success</p>
+                  <h1 class="title">pharmacie<span>ICI</span></h1>
+                  <p class="post-title">Connect with the rest of the world!</p>
+                </div>
+            </div>
+
+            <div class="search_container" id="search">
+                <form action="">
+                    <input type="text" placeholder="recherchez..." name="search">                    
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="info_médicament">
+                <div class="info_pharmacie">
+                    <div class="aperçu">
+                        <div class="nom_médicament">Doliprane</div>
+                        <div class="image_médicament">
+                            <img src="Images/loupe.png" alt="loupe" class="im_médicament">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="localisation">
+                    <div class="nom_médicament">Informations</div>
+                    <div>
+                        <p>Nom: Doliprane 500 mg</p>
+                        <p>Pharmacie: Pierre Cardin</p>
+                        <p>Lieu: Douala</p>
+                        <P>En stock: 2</P>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div>
+            <div class="text-one">
+              <h2>About Us</h2>
+              <p>pharmacieICI est un site qui vous aide à rechercher efficacement un 
+                produit pharmaceutique précis. Entrez le nom du produit que vous
+                 recherchez dans la <a href="#search">barre de recherche</a>, et nous nous indiquerons
+                 les pharmacie proches de vous qui en disposent.
+              </p>
+            </div>
+
+            <div class="text-one">
+                <h2>Contactez nous</h2>
+                <div class="contact_container">                    
+                    <form action="moi">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" placeholder="Votre nom ici" required>
+
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" placeholder="Votre email ici" required>
+
+                        <label for="message">Corpus</label>
+                        <textarea name="message" id="message" placeholder="Votre message"></textarea>
+
+                        <input type="submit" value="Submit" id="message_submit">
+                    </form>  
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer">© 2025 - pharmacie<span>ICI</span> - All rights reserved</p>
+        </footer>
+    </body>
+</html>

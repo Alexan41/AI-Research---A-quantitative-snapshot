@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(190, 217, 243);
+    --title-span-color: rgb(22, 75, 55);
+    --hero-background: rgb(255, 255, 255);
+    --hero-background-gradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(17, 57, 96, 1) 100%);
+  
+    --font-small: 0.5em;
+    --font-medium: 1em;
+    --font-medium-large: 1.25em;
+    --font-large: 1.5rem;
+    --font-x-large: 2rem;
+    --font-2x-large: 3rem;
+    --font-3x-large: 3.5rem;
+    --font-4x-large: 4rem;
+    --font-5x-large: 4.5rem;
+    --font-6x-large: 5rem;
+    --font-7x-large: 5.5rem;
+  
+    --text-color: rgba(7, 26, 44, 1);
+  
+    --transition-slow: 0.6s;
+    --transition-medium: 0.4s;
+    --transition-fast: 0.2s;
+    --transition-fastest: 0.1s;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    transition: text-underline-offset var(--transition-slow) linear;
+}
+
+header a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--nav-link-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-fastest) ease;
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+}
+
+span {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    background-color: darkgreen;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--hero-background);
+    align-items: center;
+    font-family: "Courier New", monospace;
+}    
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    font-family: "Courier New", monospace;
+}
+
+.hero {
+    height: 400px;
+    background-image: url("Images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-shadow: inset 0px 0px 300px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 0px 3000px 2000px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 300px 2000px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_container > * {
+    text-align: center;
+}
+
+.main {
+    margin-top: 60px;
+}
+
+.main .pre-title {
+    font-size: var(--font-x-large);
+}
+.main .title {
+    font-size: var(--font-4x-large);
+}
+.main span {
+    color: var(--title-span-color);
+    border-bottom: 5px solid var(--title-span-color);
+}
+.main .post-title {
+    font-size: 1.5em;
+}
+
+.search_container {
+    width: calc(100% - 100px);
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.search_container form {
+    width: 100%;
+    font-size: var(--font-2x-large);
+    display: flex;
+}
+
+.search_container form input[type=text] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    margin-left: 8px;
+}
+
+form button {
+    margin-top: 8px;
+    font-size: 29px;
+    border: none;
+    margin-right: 8px;
+}
+
+.info_médicament {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.info_pharmacie {
+    margin-top: 10px;
+}
+
+.nom_médicament {
+    text-align: center;
+    background-color: rgb(6, 98, 12);
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+.aperçu {
+    width: 250px;
+    height: auto;
+}
+
+.im_médicament {
+    width: 100%;
+    height: 100%;
+}
+
+.localisation {
+    background-color: aquamarine;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.text-one h2 {
+    width: 100%;
+    text-align: center;
+    color: darkgreen;
+    font-size: var(--font-3x-large);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-one p {
+    width: 900px;
+    margin: auto;
+    text-align: justify;
+}
+
+.text-one .contact_container {
+    color: white;
+    background-color: darkgreen;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.contact_container form * {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+}
+
+.contact_container form input, .contact_container form textarea {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#message {
+    height: 150px;
+    resize: vertical;
+    font-family: "Quicksand", sans-serif;
+    padding: 8px;
+}
+
+#message_submit {
+    width: auto;
+    color: white;
+    background-color: rgba(21, 14, 43, 0.5);
+    padding: 15px;
+}
+
+#message_submit:hover {
+    background-color: rgba(21, 14, 43, 0.9);
+    cursor: pointer;
+}
+
+.footer {
+    margin: 50px 0px 0px 0px;
+    height: 40px;
+    color: white;
+    background-color: darkgreen;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+}
