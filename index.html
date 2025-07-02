@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>How U.S. Students Use AI in 2025: A Quantitative Snapshot</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
         <meta name="description" content="This white paper is an objective 
         overview of how U.S. students use AI tools to deal with challenges in school">
@@ -36,7 +37,6 @@
                     and ElevenLabs posting up to $200 million in annual recurring revenue 
                     within just a few years.
                 </p>
-                <br>
                 <p>
                     AI has become today such a powerful and diversified tool that all 
                     components of the society benefits from it. In particular, 93% of 
@@ -49,7 +49,6 @@
                     integrity, creativity, overreliance, and fair access demand a balanced 
                     understanding.
                 </p>
-                <br>
                 <p>This white paper explore, talking with AI:</p>
                 <ul>
                     <li>Prevalence and usage patterns</li><br>
@@ -64,7 +63,7 @@
 
             <section>
                 <h1>1. Common AI uses cases by U.S. students</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Academic assistance.jpeg" alt="Image illustrating the academic assistance of AI" />
                 <h2>a. Academic assistance and study aid</h2>
                 <p>
                     From the Chegg report:
@@ -72,8 +71,42 @@
                 <p>
                     67% use AI for summarizing materials, creating study guides, or explaining 
                     complex topics; 42% rely on it for career development; 42% for personal 
-                    organization
+                    organization.
                 </p>
+                <canvas id="H1"></canvas>
+                <script>
+                    const ctx = getElementById('H1').getContext('2d');
+                    const monH = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['a', 'b', 'c'],
+                            datasets: [{
+                                label: '2023',
+                                data: [1, 2, 3],
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {display: true}
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    title: { display: true,
+                                        text: 'title1'}
+                                    },
+                                x: {
+                                    title: { display: true,
+                                        text: 'title2'}
+                                    }
+
+                                }
+                            }
+                        }
+                        
+                    )
+                </script>
                 <br>
                 <p>
                     A global Digital Education Council survey reported top uses:
@@ -123,7 +156,7 @@
 
             <section>
                 <h1>2. Academic integrity and skill attenuation</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Academic Integrity and Skill Attenuation.jpeg" alt="Image illustrating the academic integrity and skill attenuation of AI" />
                 <h2>a. Faculty concerns on cheating</h2>
                 <p>
                     A Vox/TNY adviser notes widespread student “cheating” via AI in 
@@ -161,7 +194,7 @@
 
             <section>
                 <h1>3. Faculty and Institutional Responses</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Faculty response.jpeg" alt="Image illustrating the faculty and institutional response to AI" />
                 <h2>a. Faculty engagement with AI</h2>
                 <p>
                     Inside Higher Ed reports that 33% of U.S. college instructors now 
@@ -193,7 +226,7 @@
 
             <section>
                 <h1>4. Student Sentiment: Enthusiasm vs. Anxiety</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Student Sentimen.jpeg" alt="Image illustrating the sentiments students using AI" />
                 <h2>a. Mixed feelings on dependence and fairness</h2>
                 <p>
                     SurveyMonkey found 71% of college students used AI for schoolwork; 50% 
@@ -224,7 +257,7 @@
 
             <section>
                 <h1>5. Equity and access implications</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Emerging Trends and Future Directions.jpeg" alt="Image illustrating the equity and access implications of AI" />
                 <h2>a. Mixed feelings on dependence and fairness</h2>
                 <p>
                     Inside Higher Ed found 60% of students without financial aid say AI 
@@ -251,7 +284,7 @@
 
             <section>
                 <h1>6. The cognitive and cultural trade-offs</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="The Cognitive and Cultural Trade-offs.jpeg" alt="Image illustrating the cognitive andcultural trade-offs for students using AI" />
                 <h2>a. Creativity vs. homogenization</h2>
                 <p>
                     The New Yorker warned AI tools promote “homogenized” writing, suppressing 
@@ -286,7 +319,7 @@
 
             <section>
                 <h1>7. Emerging trends and future directions</h1>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
+                <img src="Emerging Trends and Future Directions.jpeg" alt="Image illustrating the emerging trends and future directions of AI" />
                 <h2>a. AI-literacy emphasis</h2>
                 <p>
                     Surveyed students call for institutional literacy programs: 73% want faculty 
@@ -329,7 +362,7 @@
 
 
             <section>
-                <h2>8. Recommendations: toward balanced integration</h2>
+                <h1>8. Recommendations: toward balanced integration</h1>
                 <table>
                     <tr>
                         <th>Challenge</th>
@@ -365,7 +398,7 @@
 
 
             <section>
-                <h2>Conclusion</h2>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Opportunities and challenges with AI" />
                 <p>
                     By mid‑2025, AI is woven into the daily lives of nearly all U.S. college 
                     students—an essential tool for study, writing, and career readiness. Yet this 
